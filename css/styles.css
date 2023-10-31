@@ -1,3 +1,18 @@
-#yearRange {
+
+
+body {
+    padding-top: 5rem;
+  }
+  .starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    margin-left: 16px;
+  }
+
+
+  #yearRange {
     text-align: center;
 }
