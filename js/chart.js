@@ -1,6 +1,7 @@
 var ctx = document.getElementById('myChart');
 const yearsIndex = [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022];
 var myChart = null;
+const yearOfRange = document.getElementById("yearOfRange");
 
 
 
@@ -14,6 +15,8 @@ function parseData(json, i) {
     console.log(json); 
 
     const valuesArray = Object.values(json.data[i]);
+    console.log("The year is "+valuesArray[0]);
+    yearOfRange.innerText = valuesArray[0];
     const excludingYear = valuesArray.slice(1).map(element => element);
 
     console.log("vals is");

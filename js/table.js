@@ -20,15 +20,7 @@ function createTable(json) {
                 $("#tableBody").append(newRow);
             }
           }
-                
-        // newRow.append(`<td>Crime</td>`);
-        // newRow.append(`<td>2015</td>`);
-        // newRow.append(`<td>1015</td>`);
-
-        // newRow.append(`<td> ${element["All Other Offenses (Except Traffic)"]}</td>`);
-        // newRow.append(`<td> ${element.data_year}</td>`);
-        
-
+            
     }
 
 
