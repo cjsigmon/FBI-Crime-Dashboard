@@ -53,22 +53,30 @@
             <input type="range" min="0" max="10" value="0" class="slider" id="yearRange">
         </div>
 
-        <table id="myTable" class="display">
+        <table id="myTable" class="display" data-order='[[ 2, "asc" ]]' data-page-length='25'>
           <thead>
               <tr>
-                  <th>Column 1</th>
-                  <th>Column 2</th>
+                  <th>Crime</th>
+                  <th>Arrests</th>
+                  <th>Year</th>'
               </tr>
           </thead>
-          <tbody>
+          <tbody id="tableBody">
               <tr>
-                  <td>Row 1 Data 1</td>
-                  <td>Row 1 Data 2</td>
+                  <td>Loitering</td>
+                  <td>55000</td>
+                  <td>2012</td>
               </tr>
               <tr>
-                  <td>Row 2 Data 1</td>
-                  <td>Row 2 Data 2</td>
+                  <td>Urination</td>
+                  <td>55002</td>
+                  <td>2013</td>
               </tr>
+              <tr>
+                <td>Urination</td>
+                <td>550</td>
+                <td>2014</td>
+            </tr>
           </tbody>
       </table>
     

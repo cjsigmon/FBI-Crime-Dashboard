@@ -14,6 +14,7 @@ function parseData(json, i) {
     console.log(json); 
 
     const valuesArray = Object.values(json.data[i]);
+    const excludingYear = valuesArray.slice(1).map(element => element);
 
     console.log("vals is");
     console.log(valuesArray);
@@ -25,7 +26,7 @@ function parseData(json, i) {
           labels: json.keys,
           datasets: [{
             label: json.title,
-            data: Object.values(json.data[i]),
+            data: Object.values(excludingYear),
             borderWidth: 1
           }]
         },
@@ -40,7 +41,7 @@ function parseData(json, i) {
       });
     } else {
       console.log("else reached")
-      myChart.data.datasets[0].data = Object.values(json.data[i]);
+      myChart.data.datasets[0].data = Object.values(excludingYear);
       myChart.update();
     }
 

@@ -26,6 +26,8 @@ $(document).ready(function () {
             DATA = json;
 
             parseData(DATA, 0);
+            createTable(DATA);
+
 
         }
     }); 
