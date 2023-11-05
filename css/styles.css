@@ -12,6 +12,28 @@ body {
     margin-left: 16px;
   }
 
+  .a-left {
+    text-align: left;
+  }
+
+  .headline {
+    font-family: "abril-display", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .lead {
+    font-family: "abril-display", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .starter-template {
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+
+  }
+
 
   #yearRange {
     text-align: center;
