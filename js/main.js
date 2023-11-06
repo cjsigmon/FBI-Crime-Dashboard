@@ -25,6 +25,9 @@ $(document).ready(function () {
             console.log("success on ajax");
             DATA = json;
 
+            arrestArr = calculateTotalArrests(DATA);
+            console.log(arrestArr);
+
             parseData(DATA, 0);
             createTable(DATA);
 
