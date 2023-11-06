@@ -68,7 +68,23 @@ $(document).ready(function () {
         } else if (element.msRequestFullscreen) { // IE/Edge
             element.msRequestFullscreen();
         }
+        $('#exitFullscreenButton').show();
     });
+
+    $('#exitFullscreenButton').click(function() {
+      if (document.exitFullscreen) {
+          document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+      }
+
+      // Hide the "Exit Fullscreen" button
+      $('#exitFullscreenButton').hide();
+  });
 });
 
 });

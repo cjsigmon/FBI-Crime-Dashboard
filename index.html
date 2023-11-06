@@ -8,6 +8,7 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- load adobe fonts -->
     <script>
@@ -80,16 +81,24 @@
 
           <p>Gun owners in the United States continue to cite protection far more than other factors, including hunting and sport shooting, as a major reason they own a gun.</p>
 
-          <!-- chart -->
-          <div id="goBig">
-          <div>
-              <label for="zoomRange">Y-Axis Zoom:</label>
-              <input type="range" id="zoomRange" min="1" max="10" value="1">
-          </div>
-            <canvas id="myChart"></canvas>
+          <div class="d-flex justify-content-end">
+            <button id="fullscreenButton" class="btn btn-primary align-self-end">
+              <i class="fas fa-expand"></i> Expand
+            </button>
+
           </div>
 
-          <button id="fullscreenButton" class="btn btn-primary">Go Fullscreen</button>
+          <!-- chart -->
+          <div id="goBig">
+            <div>
+              <label for="zoomRange">Y-Axis Zoom:</label>
+              <input type="range" id="zoomRange" min="1" max="10" value="1">
+            </div>
+            <canvas id="myChart"></canvas>
+            <button id="exitFullscreenButton" class="btn btn-danger" style="display: none;">Exit Fullscreen</button>
+
+          </div>
+
 
           <!-- chart range slider -->
           <div class="d-flex justify-content-center flex-column">
