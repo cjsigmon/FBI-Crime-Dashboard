@@ -5,6 +5,12 @@
     font-size: 16px;
   }
   
+  .blue {
+    color: blue;
+    font-size: 1.2rem!important;
+    padding-bottom: 10px;
+  }
+  
   .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
@@ -55,4 +61,33 @@
 
   #yearRange {
     text-align: center;
+}
+
+.bg-black {
+  padding: 8px;
+}
+
+.block {
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+.bg-black > p {
+  font-size: 1rem;
+}
+
+.under-box {
+  width: 100%;
+}
+
+.under-box > div {
+  padding-left: 16px;
+
+}
+.under-box > div:hover {
+  background-color: aliceblue;
+}
+.under-box > div > a {
+  text-decoration: none;
+  color: black;
 }

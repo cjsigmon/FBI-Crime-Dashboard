@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="https://www.pewresearch.org/wp-content/themes/prc_parent/src/images/favicon/favicon.svg" sizes="32x32" />
     <!-- load adobe fonts -->
     <script>
       (function(d) {
@@ -51,23 +52,32 @@
           <div class="col-md-1"></div>
         </div>
 
-        <div class="row col-md-10 d-flex justify-content-between">
-          <div class="col-md-6">
-            <a href="https://www.pewresearch.org/" class="logo" rel="home">
-              <img src="https://www.pewresearch.org/politics/wp-content/themes/prc_parent/src/images/logos/logo-standard.svg" alt="Pew Research Center Logo">
-            </a>
-          </div>
-          <div class="col-md-4">
-              <form role="search" action="https://www.pewresearch.org/">
-          <div class="ui action fluid input">
-            <input type="search" placeholder="Search pewresearch.org..." spellcheck="false" data-ms-editor="true" value="" name="s">
-            <button class="ui icon secondary button">
-              <i class="search icon"></i>
-            </button>
-          </div>
-        </form>
+        <div class="row p-4">
+          <div class="col-md-1"></div>
+          <div class="col-md-10 d-flex justify-content-between">
+            <div class="col-md-6">
+              <a href="https://www.pewresearch.org/" class="logo" rel="home">
+                <img src="https://www.pewresearch.org/politics/wp-content/themes/prc_parent/src/images/logos/logo-standard.svg" alt="Pew Research Center Logo">
+              </a>
             </div>
+            <div class="col-md-4 d-flex justify-content-end">
+                <form role="search" action="https://www.pewresearch.org/">
+                <div class="d-flex">
+                  <input type="search" placeholder="Search pewresearch.org..." spellcheck="false" data-ms-editor="true" value="" name="s">
+                  <button class="btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+          </form>
+              </div>
+          </div>
+          <div class="col-md-1"></div>
+
         </div>
+
+ 
+
+       
   
         <div class="row">
           <div class="col-md-1">
@@ -75,7 +85,7 @@
 
           <div class="col-md-10 row">
         <!-- main content on left -->
-        <div class="starter-template col-md-7">
+        <div class="starter-template col-md-7 flex-fill">
           <h1 class="a-left headline">FBI-Recorded Crimes Against Society</h1>
           <p class="lead a-left">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
 
@@ -90,9 +100,9 @@
 
           <!-- chart -->
           <div id="goBig">
-            <div>
-              <label for="zoomRange">Y-Axis Zoom:</label>
-              <input type="range" id="zoomRange" min="1" max="10" value="1">
+            <div class="d-flex justify-content-center align-items-center">
+              <label class="blue my-sans" for="zoomRange">Y-Axis Zoom:</label>
+              <input class="m-3" type="range" id="zoomRange" min="1" max="10" value="1">
             </div>
             <canvas id="myChart"></canvas>
             <button id="exitFullscreenButton" class="btn btn-danger" style="display: none;">Exit Fullscreen</button>
@@ -137,63 +147,75 @@
         <!-- end of main content on left -->
         </div>
         <!-- sidepanel on right -->
-        <div class="col-md-3">
+        <div class="col-md-3 px-0 py-0 flex-fill">
 
-          <div class="block">
+          <div class="block w-100">
             <div class="bg-black">
               <p class="my-sans text-white">REPORT MATERIALS</p>
             </div>
             <div class="under-box">
-              <a href="#">Topline QUESTION</a>
-              <br>
-              <a href="#">Complete Report</a>
-  
+              <div>
+                <a href="#">Topline QUESTION</a>
+              </div>
+              <div>
+                <a href="#">Complete Report</a>
+              </div>  
             </div>
           </div>
 
-          <div class="block">
+          <div class="block w-100">
             <div class="bg-black">
               <p class="my-sans text-white">TABLE OF CONTENTS</p>
             </div>
             <div class="under-box">
-              <a href="#">Acknowledgements</a>
-              <br>
-              <a href="#">Methodology</a>
+              <div>
+                <a href="#">Topline QUESTION</a>
+              </div>
+              <div>
+                <a href="#">Complete Report</a>
+              </div>  
             </div>
           </div>
 
-          <div class="block">
+          <div class="block w-100">
             <div class="bg-black">
               <p class="my-sans text-white">RELATED</p>
             </div>
             <div class="under-box">
-              <a href="#">Acknowledgements</a>
-              <br>
-              <a href="#">Methodology</a>
+              <div>
+                <a href="#">Topline QUESTION</a>
+              </div>
+              <div>
+                <a href="#">Complete Report</a>
+              </div>  
             </div>
           </div>
 
-          
-          <div class="block">
+          <div class="block w-100">
             <div class="bg-black">
               <p class="my-sans text-white">TOPICS</p>
             </div>
             <div class="under-box">
-              <a href="#">Acknowledgements</a>
-              <br>
-              <a href="#">Methodology</a>
+              <div>
+                <a href="#">Topline QUESTION</a>
+              </div>
+              <div>
+                <a href="#">Complete Report</a>
+              </div>  
             </div>
           </div>
 
-          
-          <div class="block">
+          <div class="block w-100">
             <div class="bg-black">
               <p class="my-sans text-white">MOST POPULAR</p>
             </div>
             <div class="under-box">
-              <a href="#">Acknowledgements</a>
-              <br>
-              <a href="#">Methodology</a>
+              <div>
+                <a href="#">Topline QUESTION</a>
+              </div>
+              <div>
+                <a href="#">Complete Report</a>
+              </div>  
             </div>
           </div>
           
