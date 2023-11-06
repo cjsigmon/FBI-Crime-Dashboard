@@ -29,6 +29,7 @@ function createTable(json) {
     $('#myTable').DataTable(
         {
             responsive: true,
+            searching: false,
             columnDefs: [
                 {
                     target: 1,
@@ -42,7 +43,8 @@ function createTable(json) {
                     targets: [2, 2],
                     className: 'dt-body-right'
                 }
-            ]
+            ],
+            
         }
 
     );

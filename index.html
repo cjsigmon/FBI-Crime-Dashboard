@@ -87,10 +87,10 @@
         <!-- main content on left -->
         <div class="starter-template col-md-7 flex-fill">
           <h1 class="a-left headline">FBI-Recorded Crimes Against Society</h1>
-          <p class="lead a-left">FBI's transition to NIBRS in 2021:<br>enhancing crime data accuracy and insight.</p>
+          <p class="lead a-left">The agency's transition to NIBRS in 2021</p>
           <p>FBI statistics on the last 10 years' arrests in the crimes against society category show a negative correlation with time.</p>
           <canvas class="my-4" id="lineChart"></canvas>
-          <p>The Uniform Crime Reporting Program (UCR) is the source of the data, and has been around since 1930.</p>
+          <p>The Uniform Crime Reporting Program (UCR), which has been around since 1930, is the source of the data.</p>
           <p>Its scope includes statistics on arrests for crimes broken down by categories and subcategories, for example the broad category "violent crime" and one subcategory "murder."</p>
           <p>While this downward trend could be merely seen as an indicator of dwindling crime or less data existing, there is a third factor at play.</p>          
           <p>In 2021, the FBI made a switch to only include data from NIBRS aka the National Incident-Based Reporting System.</p>
@@ -118,19 +118,20 @@
           </div>
                     <!-- chart range slider -->
                     <div class="d-flex justify-content-center flex-column">
-                      <input type="range" min="0" max="10" value="0" class="slider" id="yearRange">
-                      <p class="blue">Year: <span id="yearOfRange"></span></h4>
+                      <input type="range" min="0" max="10" value="0" class="slider m-3" id="yearRange">
+                      <p class="blue my-sans text-center">Year: <span id="yearOfRange"></span></h4>
                   </div>
 
           <p>Even lower than drunkenness are suspicion reports, with only seven reported in 2021, and 63 in 2022</p>
           <p>The FBI's interactive Crime Data explorer offers a comment not left on other crimes against society, "Suspicion data is not available for 2021 data year due to the transition to NIBRS."</p>
 
-
+          <br>
+          <p>All data reported in this article gathered from FBI API, at https://api.usa.gov/crime/fbi/cde/arrest/national/society</p>
 
 
 
           <!-- table from chart data -->
-        <table id="myTable" class="display" data-order='[[ 2, "asc" ]]' data-page-length='25'>
+        <table id="myTable" class="display" data-order='[[ 2, "asc" ]]' data-page-length='8'>
           <thead>
               <tr>
                   <th>Crime</th>
