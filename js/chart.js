@@ -47,7 +47,7 @@ function parseData(json, i) {
       const zoomLevel = parseFloat($(this).val());
       // Update the chart's options with the new scale
       myChart.options.scales.y.min = 0;
-      myChart.options.scales.y.max = 3500000 / zoomLevel; // Adjust the max value based on zoom
+      myChart.options.scales.y.max = 3500000 / Math.pow(0.7, -zoomLevel);
       myChart.update();
   });
 

@@ -10,6 +10,14 @@
     font-size: 1.2rem!important;
     padding-bottom: 10px;
   }
+
+  .rotate-90 {
+    transform: rotate(-90deg) translateY(-300%);
+    left: 0;
+    margin: 0;
+  }
+
+  
   
   .starter-template {
     padding: 3rem 1.5rem;
