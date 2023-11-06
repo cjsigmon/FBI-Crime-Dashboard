@@ -1,15 +1,28 @@
 
-
-body {
-    padding-top: 5rem;
+  p{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
   }
+  
   .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
   }
 
-  .navbar-brand {
-    margin-left: 16px;
+
+  .my-sans {
+    font-size: 0.8rem;
+    font-family: "franklin-gothic-atf", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+  }
+
+  .vert {
+    height: 80%;
+    border: 1px solid rgb(216, 216, 216);
+    margin: 6px;
   }
 
   .a-left {
@@ -32,6 +45,11 @@ body {
     border-right: 1px solid lightgray;
     border-top: 1px solid lightgray;
 
+  }
+
+  .under-box > a {
+    text-decoration: none;
+    color: black;
   }
 
 
