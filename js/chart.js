@@ -4,12 +4,6 @@ var myChart = null;
 const yearOfRange = document.getElementById("yearOfRange");
 
 
-
-$(document).ready(function () {
-    console.log("society data reached");
-
-});
-
 function parseData(json, i) {
     console.log("new load")
     console.log(json); 
@@ -48,16 +42,37 @@ function parseData(json, i) {
       myChart.update();
     }
 
-    } 
+    // Update the Y-axis zoom level when the range input changes
+    $('#zoomRange').on('input', function() {
+      const zoomLevel = parseFloat($(this).val());
+      // Update the chart's options with the new scale
+      myChart.options.scales.y.min = 0;
+      myChart.options.scales.y.max = 3500000 / zoomLevel; // Adjust the max value based on zoom
+      myChart.update();
+  });
 
-    
+} 
 
-    // for (let i = 0; i < 25; i++) {
-    //     let newReport = "Crime committed: " + json.data[i][CRIME] + " by " +json.data[i][AGE]
-    //     + " years old " + json.data[i][RACE] + " " + json.data[i][SEX];
-    //     var li = document.createElement("li");
-    //     li.appendChild(document.createTextNode(newReport));
-    //     CRIMELIST.appendChild(li);
-    // }
+$(document).ready(function () {
+  console.log("society data reached");
+
+  $(document).ready(function() {
+    $('#fullscreenButton').click(function() {
+        const element = $('#goBig')[0];
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) { // Firefox
+            element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+            element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) { // IE/Edge
+            element.msRequestFullscreen();
+        }
+    });
+});
+
+});
+
+  
 
 

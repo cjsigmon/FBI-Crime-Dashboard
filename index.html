@@ -81,7 +81,15 @@
           <p>Gun owners in the United States continue to cite protection far more than other factors, including hunting and sport shooting, as a major reason they own a gun.</p>
 
           <!-- chart -->
-          <div><canvas id="myChart"></canvas></div>
+          <div id="goBig">
+          <div>
+              <label for="zoomRange">Y-Axis Zoom:</label>
+              <input type="range" id="zoomRange" min="1" max="10" value="1">
+          </div>
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <button id="fullscreenButton" class="btn btn-primary">Go Fullscreen</button>
 
           <!-- chart range slider -->
           <div class="d-flex justify-content-center flex-column">
@@ -203,5 +211,8 @@
     <script src="js/main.js"></script>
     <script src="js/chart.js"></script>
     <script src="js/table.js"></script>
+    <script>
+
+  </script>
 </body>
 </html>
